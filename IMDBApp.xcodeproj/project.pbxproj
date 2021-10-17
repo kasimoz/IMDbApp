@@ -7,23 +7,79 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE95175F10BC0D826A8DA0A4 /* Pods_IMDBApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EDE61FD45AC042D94C6569C /* Pods_IMDBApp.framework */; };
+		BEA0FC18271AE830007450FF /* MovieItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA0FC17271AE830007450FF /* MovieItem.swift */; };
+		BEA0FC1A271AF7F2007450FF /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA0FC19271AF7F2007450FF /* UIImageView+Extensions.swift */; };
+		BEA0FC1C271B0EE5007450FF /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA0FC1B271B0EE5007450FF /* API.swift */; };
 		BEEC8C232719D29300A9E1BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC8C222719D29300A9E1BF /* AppDelegate.swift */; };
 		BEEC8C252719D29300A9E1BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC8C242719D29300A9E1BF /* SceneDelegate.swift */; };
-		BEEC8C272719D29300A9E1BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC8C262719D29300A9E1BF /* ViewController.swift */; };
 		BEEC8C2A2719D29300A9E1BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEEC8C282719D29300A9E1BF /* Main.storyboard */; };
 		BEEC8C2C2719D29300A9E1BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEEC8C2B2719D29300A9E1BF /* Assets.xcassets */; };
 		BEEC8C2F2719D29300A9E1BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEEC8C2D2719D29300A9E1BF /* LaunchScreen.storyboard */; };
+		BEEC8C3A2719D3C400A9E1BF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC8C392719D3C400A9E1BF /* NetworkManager.swift */; };
+		BEEC8C3D2719D40C00A9E1BF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC8C3C2719D40C00A9E1BF /* Constants.swift */; };
+		BEEC8C432719D49100A9E1BF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC8C422719D49100A9E1BF /* HomeViewController.swift */; };
+		BEEC8C452719D49F00A9E1BF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC8C442719D49F00A9E1BF /* DetailViewController.swift */; };
+		BEEC8C4C2719D93400A9E1BF /* NowPlayingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC8C4A2719D93400A9E1BF /* NowPlayingCollectionViewCell.swift */; };
+		BEEC8C4D2719D93400A9E1BF /* NowPlayingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEEC8C4B2719D93400A9E1BF /* NowPlayingCollectionViewCell.xib */; };
+		BEEC8C502719D94C00A9E1BF /* UpcomingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC8C4E2719D94C00A9E1BF /* UpcomingTableViewCell.swift */; };
+		BEEC8C512719D94C00A9E1BF /* UpcomingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEEC8C4F2719D94C00A9E1BF /* UpcomingTableViewCell.xib */; };
+		BEEC8C542719E24700A9E1BF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC8C532719E24700A9E1BF /* HomeViewModel.swift */; };
+		BEEC8C5D271A0F9700A9E1BF /* HomeBaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC8C5A271A0F9700A9E1BF /* HomeBaseResponse.swift */; };
+		BEEC8C5E271A0F9700A9E1BF /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC8C5B271A0F9700A9E1BF /* Results.swift */; };
+		BEEC8C5F271A0F9700A9E1BF /* Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC8C5C271A0F9700A9E1BF /* Dates.swift */; };
+		BEEC8C6C271A11BB00A9E1BF /* Model+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC8C64271A11BB00A9E1BF /* Model+Extensions.swift */; };
+		BEEC8C6D271A11BB00A9E1BF /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC8C65271A11BB00A9E1BF /* String+Extensions.swift */; };
+		BEEC8C6F271A11BB00A9E1BF /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC8C67271A11BB00A9E1BF /* Date+Extensions.swift */; };
+		BEEC8C71271A11BB00A9E1BF /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC8C69271A11BB00A9E1BF /* UIViewController+Extensions.swift */; };
+		BEEC8C7B271ABC1200A9E1BF /* Genres.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC8C75271ABC1200A9E1BF /* Genres.swift */; };
+		BEEC8C7C271ABC1200A9E1BF /* BelongsToCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC8C76271ABC1200A9E1BF /* BelongsToCollection.swift */; };
+		BEEC8C7D271ABC1200A9E1BF /* ProductionCountries.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC8C77271ABC1200A9E1BF /* ProductionCountries.swift */; };
+		BEEC8C7E271ABC1200A9E1BF /* SpokenLanguages.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC8C78271ABC1200A9E1BF /* SpokenLanguages.swift */; };
+		BEEC8C7F271ABC1200A9E1BF /* DetailBaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC8C79271ABC1200A9E1BF /* DetailBaseResponse.swift */; };
+		BEEC8C80271ABC1200A9E1BF /* Production_companies.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC8C7A271ABC1200A9E1BF /* Production_companies.swift */; };
+		BEEC8C82271ABD0100A9E1BF /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC8C81271ABD0100A9E1BF /* DetailViewModel.swift */; };
+		BEEC8C87271AC96200A9E1BF /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC8C86271AC96200A9E1BF /* MovieDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00A3FBF7E8C65F64CFCD1816 /* Pods-IMDBApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMDBApp.debug.xcconfig"; path = "Target Support Files/Pods-IMDBApp/Pods-IMDBApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8EDE61FD45AC042D94C6569C /* Pods_IMDBApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMDBApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA0FC17271AE830007450FF /* MovieItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItem.swift; sourceTree = "<group>"; };
+		BEA0FC19271AF7F2007450FF /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		BEA0FC1B271B0EE5007450FF /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		BEEC8C1F2719D29300A9E1BF /* IMDBApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMDBApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEEC8C222719D29300A9E1BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEEC8C242719D29300A9E1BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BEEC8C262719D29300A9E1BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BEEC8C292719D29300A9E1BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BEEC8C2B2719D29300A9E1BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEEC8C2E2719D29300A9E1BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEEC8C302719D29300A9E1BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEEC8C392719D3C400A9E1BF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BEEC8C3C2719D40C00A9E1BF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BEEC8C422719D49100A9E1BF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BEEC8C442719D49F00A9E1BF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BEEC8C4A2719D93400A9E1BF /* NowPlayingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingCollectionViewCell.swift; sourceTree = "<group>"; };
+		BEEC8C4B2719D93400A9E1BF /* NowPlayingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NowPlayingCollectionViewCell.xib; sourceTree = "<group>"; };
+		BEEC8C4E2719D94C00A9E1BF /* UpcomingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingTableViewCell.swift; sourceTree = "<group>"; };
+		BEEC8C4F2719D94C00A9E1BF /* UpcomingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomingTableViewCell.xib; sourceTree = "<group>"; };
+		BEEC8C532719E24700A9E1BF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		BEEC8C5A271A0F9700A9E1BF /* HomeBaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeBaseResponse.swift; sourceTree = "<group>"; };
+		BEEC8C5B271A0F9700A9E1BF /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		BEEC8C5C271A0F9700A9E1BF /* Dates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dates.swift; sourceTree = "<group>"; };
+		BEEC8C64271A11BB00A9E1BF /* Model+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Model+Extensions.swift"; sourceTree = "<group>"; };
+		BEEC8C65271A11BB00A9E1BF /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		BEEC8C67271A11BB00A9E1BF /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		BEEC8C69271A11BB00A9E1BF /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		BEEC8C75271ABC1200A9E1BF /* Genres.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genres.swift; sourceTree = "<group>"; };
+		BEEC8C76271ABC1200A9E1BF /* BelongsToCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BelongsToCollection.swift; sourceTree = "<group>"; };
+		BEEC8C77271ABC1200A9E1BF /* ProductionCountries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductionCountries.swift; sourceTree = "<group>"; };
+		BEEC8C78271ABC1200A9E1BF /* SpokenLanguages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpokenLanguages.swift; sourceTree = "<group>"; };
+		BEEC8C79271ABC1200A9E1BF /* DetailBaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailBaseResponse.swift; sourceTree = "<group>"; };
+		BEEC8C7A271ABC1200A9E1BF /* Production_companies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Production_companies.swift; sourceTree = "<group>"; };
+		BEEC8C81271ABD0100A9E1BF /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		BEEC8C86271AC96200A9E1BF /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
+		F75BB374A61E6E8E72A039D8 /* Pods-IMDBApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMDBApp.release.xcconfig"; path = "Target Support Files/Pods-IMDBApp/Pods-IMDBApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +87,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE95175F10BC0D826A8DA0A4 /* Pods_IMDBApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50FA7A2EF9C7351E07E2923F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EDE61FD45AC042D94C6569C /* Pods_IMDBApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BEEC8C162719D29300A9E1BF = {
 			isa = PBXGroup;
 			children = (
 				BEEC8C212719D29300A9E1BF /* IMDBApp */,
 				BEEC8C202719D29300A9E1BF /* Products */,
+				C2879513467A0F092B24E4D2 /* Pods */,
+				50FA7A2EF9C7351E07E2923F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +123,154 @@
 		BEEC8C212719D29300A9E1BF /* IMDBApp */ = {
 			isa = PBXGroup;
 			children = (
+				BEEC8C85271AC94A00A9E1BF /* model */,
+				BEEC8C402719D45300A9E1BF /* view */,
+				BEEC8C412719D45800A9E1BF /* viewModel */,
+				BEEC8C62271A119300A9E1BF /* extension */,
+				BEEC8C3B2719D3FC00A9E1BF /* common */,
+				BEEC8C362719D3A000A9E1BF /* service */,
 				BEEC8C222719D29300A9E1BF /* AppDelegate.swift */,
 				BEEC8C242719D29300A9E1BF /* SceneDelegate.swift */,
-				BEEC8C262719D29300A9E1BF /* ViewController.swift */,
 				BEEC8C282719D29300A9E1BF /* Main.storyboard */,
 				BEEC8C2B2719D29300A9E1BF /* Assets.xcassets */,
 				BEEC8C2D2719D29300A9E1BF /* LaunchScreen.storyboard */,
 				BEEC8C302719D29300A9E1BF /* Info.plist */,
 			);
 			path = IMDBApp;
+			sourceTree = "<group>";
+		};
+		BEEC8C362719D3A000A9E1BF /* service */ = {
+			isa = PBXGroup;
+			children = (
+				BEEC8C3F2719D44100A9E1BF /* response */,
+				BEEC8C392719D3C400A9E1BF /* NetworkManager.swift */,
+				BEA0FC1B271B0EE5007450FF /* API.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		BEEC8C3B2719D3FC00A9E1BF /* common */ = {
+			isa = PBXGroup;
+			children = (
+				BEEC8C3C2719D40C00A9E1BF /* Constants.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		BEEC8C3F2719D44100A9E1BF /* response */ = {
+			isa = PBXGroup;
+			children = (
+				BEEC8C73271ABBAE00A9E1BF /* home */,
+				BEEC8C74271ABBBF00A9E1BF /* detail */,
+			);
+			path = response;
+			sourceTree = "<group>";
+		};
+		BEEC8C402719D45300A9E1BF /* view */ = {
+			isa = PBXGroup;
+			children = (
+				BEEC8C462719D8A800A9E1BF /* home */,
+				BEEC8C472719D8B000A9E1BF /* detail */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BEEC8C412719D45800A9E1BF /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BEEC8C81271ABD0100A9E1BF /* DetailViewModel.swift */,
+				BEEC8C532719E24700A9E1BF /* HomeViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		BEEC8C462719D8A800A9E1BF /* home */ = {
+			isa = PBXGroup;
+			children = (
+				BEEC8C492719D8EA00A9E1BF /* collectionViewCell */,
+				BEEC8C482719D8D800A9E1BF /* tableViewCell */,
+				BEEC8C422719D49100A9E1BF /* HomeViewController.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		BEEC8C472719D8B000A9E1BF /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				BEEC8C442719D49F00A9E1BF /* DetailViewController.swift */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
+		BEEC8C482719D8D800A9E1BF /* tableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BEEC8C4E2719D94C00A9E1BF /* UpcomingTableViewCell.swift */,
+				BEEC8C4F2719D94C00A9E1BF /* UpcomingTableViewCell.xib */,
+			);
+			path = tableViewCell;
+			sourceTree = "<group>";
+		};
+		BEEC8C492719D8EA00A9E1BF /* collectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BEEC8C4A2719D93400A9E1BF /* NowPlayingCollectionViewCell.swift */,
+				BEEC8C4B2719D93400A9E1BF /* NowPlayingCollectionViewCell.xib */,
+			);
+			path = collectionViewCell;
+			sourceTree = "<group>";
+		};
+		BEEC8C62271A119300A9E1BF /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				BEEC8C64271A11BB00A9E1BF /* Model+Extensions.swift */,
+				BEEC8C67271A11BB00A9E1BF /* Date+Extensions.swift */,
+				BEEC8C65271A11BB00A9E1BF /* String+Extensions.swift */,
+				BEEC8C69271A11BB00A9E1BF /* UIViewController+Extensions.swift */,
+				BEA0FC19271AF7F2007450FF /* UIImageView+Extensions.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		BEEC8C73271ABBAE00A9E1BF /* home */ = {
+			isa = PBXGroup;
+			children = (
+				BEEC8C5A271A0F9700A9E1BF /* HomeBaseResponse.swift */,
+				BEEC8C5C271A0F9700A9E1BF /* Dates.swift */,
+				BEEC8C5B271A0F9700A9E1BF /* Results.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		BEEC8C74271ABBBF00A9E1BF /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				BEEC8C79271ABC1200A9E1BF /* DetailBaseResponse.swift */,
+				BEEC8C76271ABC1200A9E1BF /* BelongsToCollection.swift */,
+				BEEC8C75271ABC1200A9E1BF /* Genres.swift */,
+				BEEC8C7A271ABC1200A9E1BF /* Production_companies.swift */,
+				BEEC8C77271ABC1200A9E1BF /* ProductionCountries.swift */,
+				BEEC8C78271ABC1200A9E1BF /* SpokenLanguages.swift */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
+		BEEC8C85271AC94A00A9E1BF /* model */ = {
+			isa = PBXGroup;
+			children = (
+				BEA0FC17271AE830007450FF /* MovieItem.swift */,
+				BEEC8C86271AC96200A9E1BF /* MovieDetail.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		C2879513467A0F092B24E4D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00A3FBF7E8C65F64CFCD1816 /* Pods-IMDBApp.debug.xcconfig */,
+				F75BB374A61E6E8E72A039D8 /* Pods-IMDBApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +280,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEEC8C332719D29300A9E1BF /* Build configuration list for PBXNativeTarget "IMDBApp" */;
 			buildPhases = (
+				64B5FB8A696EE7696CB187C8 /* [CP] Check Pods Manifest.lock */,
 				BEEC8C1B2719D29300A9E1BF /* Sources */,
 				BEEC8C1C2719D29300A9E1BF /* Frameworks */,
 				BEEC8C1D2719D29300A9E1BF /* Resources */,
+				73214CB36AFA3AD2FC878446 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,22 +333,90 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEEC8C4D2719D93400A9E1BF /* NowPlayingCollectionViewCell.xib in Resources */,
 				BEEC8C2F2719D29300A9E1BF /* LaunchScreen.storyboard in Resources */,
 				BEEC8C2C2719D29300A9E1BF /* Assets.xcassets in Resources */,
+				BEEC8C512719D94C00A9E1BF /* UpcomingTableViewCell.xib in Resources */,
 				BEEC8C2A2719D29300A9E1BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		64B5FB8A696EE7696CB187C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IMDBApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73214CB36AFA3AD2FC878446 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IMDBApp/Pods-IMDBApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IMDBApp/Pods-IMDBApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IMDBApp/Pods-IMDBApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BEEC8C1B2719D29300A9E1BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEEC8C272719D29300A9E1BF /* ViewController.swift in Sources */,
+				BEEC8C7E271ABC1200A9E1BF /* SpokenLanguages.swift in Sources */,
+				BEEC8C7B271ABC1200A9E1BF /* Genres.swift in Sources */,
+				BEEC8C7F271ABC1200A9E1BF /* DetailBaseResponse.swift in Sources */,
+				BEEC8C542719E24700A9E1BF /* HomeViewModel.swift in Sources */,
 				BEEC8C232719D29300A9E1BF /* AppDelegate.swift in Sources */,
+				BEEC8C3A2719D3C400A9E1BF /* NetworkManager.swift in Sources */,
+				BEEC8C71271A11BB00A9E1BF /* UIViewController+Extensions.swift in Sources */,
+				BEEC8C6D271A11BB00A9E1BF /* String+Extensions.swift in Sources */,
 				BEEC8C252719D29300A9E1BF /* SceneDelegate.swift in Sources */,
+				BEEC8C82271ABD0100A9E1BF /* DetailViewModel.swift in Sources */,
+				BEA0FC1A271AF7F2007450FF /* UIImageView+Extensions.swift in Sources */,
+				BEEC8C5D271A0F9700A9E1BF /* HomeBaseResponse.swift in Sources */,
+				BEEC8C80271ABC1200A9E1BF /* Production_companies.swift in Sources */,
+				BEA0FC18271AE830007450FF /* MovieItem.swift in Sources */,
+				BEEC8C7C271ABC1200A9E1BF /* BelongsToCollection.swift in Sources */,
+				BEEC8C6C271A11BB00A9E1BF /* Model+Extensions.swift in Sources */,
+				BEEC8C432719D49100A9E1BF /* HomeViewController.swift in Sources */,
+				BEEC8C3D2719D40C00A9E1BF /* Constants.swift in Sources */,
+				BEEC8C6F271A11BB00A9E1BF /* Date+Extensions.swift in Sources */,
+				BEEC8C7D271ABC1200A9E1BF /* ProductionCountries.swift in Sources */,
+				BEA0FC1C271B0EE5007450FF /* API.swift in Sources */,
+				BEEC8C5E271A0F9700A9E1BF /* Results.swift in Sources */,
+				BEEC8C502719D94C00A9E1BF /* UpcomingTableViewCell.swift in Sources */,
+				BEEC8C5F271A0F9700A9E1BF /* Dates.swift in Sources */,
+				BEEC8C452719D49F00A9E1BF /* DetailViewController.swift in Sources */,
+				BEEC8C4C2719D93400A9E1BF /* NowPlayingCollectionViewCell.swift in Sources */,
+				BEEC8C87271AC96200A9E1BF /* MovieDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +493,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +548,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -284,6 +560,7 @@
 		};
 		BEEC8C342719D29300A9E1BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00A3FBF7E8C65F64CFCD1816 /* Pods-IMDBApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,6 +568,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IMDBApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = IMDbApp;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -311,6 +589,7 @@
 		};
 		BEEC8C352719D29300A9E1BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F75BB374A61E6E8E72A039D8 /* Pods-IMDBApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,6 +597,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IMDBApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = IMDbApp;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

@@ -6,3 +6,11 @@
 //
 
 import Foundation
+import UIKit
+import SDWebImage
+
+extension UIImageView {
+    func setImageWithUrl(_ url :String){
+        self.sd_setImage(with: URL(string: url), placeholderImage: UIImage.init(systemName: "exclamationmark.triangle"), context: nil)
+    }
+}
