@@ -13,7 +13,7 @@ open class Constants: NSObject {
     }
     
     public struct IMDBApp {
-        public static let apiKey = "e1c92d4928c14a7540adc8a96e8296ef"
+        public static let apiKey = "YOUR_API_KEY"
         public static let RedirectUrl = "https://www.imdb.com/title/%@"
         public static let ImageUrl = "https://image.tmdb.org/t/p/w500%@"
     }
